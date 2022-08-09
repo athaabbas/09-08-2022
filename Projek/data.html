@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Siswa SMK Telkom Malang</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+
+            body {
+                margin: 0;
+                background-color: #d1cfcf;
+            }
+
+            .navbar {
+                width: 100%;
+                margin: auto;
+                padding: 16px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f1f1f1;
+            }
+
+            .logo {
+                width: 150px;
+                padding: 0 20px;
+                cursor: pointer;
+            }
+
+            .navbar ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .navbar ul li a:hover {
+                color: red;
+            }
+
+            .navbar ul li::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: red;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+            }
+
+            .navbar ul li:hover::after {
+                width: 100%;
+                color: red;
+            }
+
+            .before-column {
+                float: left;
+                width: 60%;
+                padding: 20px;
+            }
+
+            .column {
+                float: left;
+                width: 46.8%;
+                padding: 20px;
+            }
+
+            .main {
+                float: left;
+                width: auto;
+                padding: 20px;
+                overflow: hidden;
+                color: black;
+            }
+            
+            tr:nth-child(even) {
+                color: red;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                background-color: #fe3e3e;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="/Projek/Foto/logo_hitam.png" class="logo">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="data.html">Data Siswa</a></li>
+                <li><a href="daftar.html">PPDB</a></li>
+            </ul>
+        </div>
+
+        <div class="before-column">
+            <h2>Siswa Lebih Dari 1000+</h2>
+            <p>Mayoritas siswa kami tidak hanya dari Malang, namun juga dari berbagai daerah.
+               Semuanya berkesempatan bergabung dengan kami.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>Rekayasa Perangkat Lunak</h2>
+                <table cellpadding="5">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Athailla Azrial</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>RPL</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Peter Griffin</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>RPL</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Raiandhra</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>RPL</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Fulan</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>RPL</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Nguyen</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>RPL</td>
+                    </tr>
+                </table> 
+            </div>
+        
+            <div class="column">
+                <h2>Teknik Komputer & Jaringan</h2>
+                <table cellpadding="5">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Agus</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>TKJ</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Hery</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>TKJ</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Aji</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>TKJ</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Abdi</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>TKJ</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Amir</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>:</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>TKJ</td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+
+        <div class="footer">
+            <p>Copyright SMK Telkom Malang</p>
+        </div>
+    </body>
+</html>

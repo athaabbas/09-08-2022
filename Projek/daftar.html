@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PPDB SMK Telkom Malang</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .navbar {
+                width: 100%;
+                margin: auto;
+                padding: 16px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f1f1f1;
+            }
+
+            .logo {
+                width: 150px;
+                padding: 0 20px;
+                cursor: pointer;
+            }
+
+            .navbar ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .navbar ul li a:hover {
+                color: red;
+            }
+
+            .navbar ul li::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: red;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+            }
+
+            .navbar ul li:hover::after {
+                width: 100%;
+                color: red;
+            }
+
+            .column {
+                float: left;
+                width: 48%;
+                padding: 15px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                background-color: #fe3e3e;
+                padding: 10px;
+                text-align: center;
+            }
+
+            button {
+                padding: 15px 30px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 3px 35px;
+                cursor: pointer;
+                color: #fff;
+
+                box-shadow: 0 20px 30px 0 rgb(67 37 204 / 20%);
+                background: #bd2130;
+                border: 2px solid #bd2130;
+                border-radius: 25px;
+            }
+
+            button:hover {
+                background: transparent;
+                transition: 0.5s;
+                color: black;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="/Projek/Foto/logo_hitam.png" class="logo">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="data.html">Data Siswa</a></li>
+                <li><a href="daftar.html">PPDB</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2 style="font-weight: 500; line-height: 60px; font-size: 42px; margin-top: 30px;
+                margin-left: 40px; margin-bottom: auto;">
+                <span>PPDB Online</span><br>
+                SMK Telkom Malang</h2>
+
+                <p style="font-weight: 300; margin-left: 40px; font-size: 1.25rem;">
+                    Untuk calon pendaftar bisa mendaftar melalui website ini atau 
+                    langsung datang ke tempat pendaftaran.
+                </p>
+                <p>
+                    <button onclick="document.location='#'">Daftar Sekarang</button>
+                </p>
+            </div>
+
+            <div class="column">
+                <img src="/Projek/Foto/alur.png" width="600px" style="margin: 0 300px;">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright SMK Telkom Malang</p>
+        </div>
+    </body>
+</html>
